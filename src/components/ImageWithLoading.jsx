@@ -37,7 +37,9 @@ const ImageWithLoading = ({
   // Preload image
   useEffect(() => {
     const img = new Image();
-    img.src = src;
+    // Ensure the src starts with the base URL
+    const fullSrc = src.startsWith('/My-Love/') ? src : `/My-Love${src}`;
+    img.src = fullSrc;
     img.onload = handleLoad;
     img.onerror = handleError;
 
@@ -90,7 +92,7 @@ const ImageWithLoading = ({
         </div>
       ) : (
         <img
-          src={src}
+          src={src.startsWith('/My-Love/') ? src : `/My-Love${src}`}
           alt={alt}
           onLoad={handleLoad}
           onError={handleError}

@@ -16,7 +16,7 @@ const ImageSlider = ({ images }) => {
   useEffect(() => {
     images.forEach((image) => {
       const img = new Image();
-      img.src = image.src;
+      img.src = `/My-Love${image.src}`;
     });
   }, [images]);
 
@@ -74,7 +74,7 @@ const ImageSlider = ({ images }) => {
             <SwiperSlide key={index}>
               <div className="relative">
                 <ImageWithLoading
-                  src={image.src}
+                  src={`/My-Love${image.src}`}
                   alt={image.alt}
                   className="rounded-lg shadow-xl h-full w-full object-cover"
                   loading="lazy"
@@ -109,7 +109,7 @@ ImageSlider.propTypes = {
       src: PropTypes.string.isRequired,
       alt: PropTypes.string.isRequired,
       date: PropTypes.string.isRequired,
-      description: PropTypes.string.isRequired
+      description: PropTypes.string.isRequired,
     })
   ).isRequired,
 };
