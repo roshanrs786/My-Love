@@ -105,28 +105,28 @@ function App() {
         className="min-h-screen bg-white text-gray-900 dark:bg-gray-900 dark:text-white transition-colors duration-300"
         role="main"
       >
-        <div ref={containerRef} className="container mx-auto px-4 sm:px-6 py-8 sm:py-12">
-          <header className="text-center mb-8 sm:mb-16">
+        <div ref={containerRef} className="container mx-auto px-2 sm:px-6 py-4 sm:py-12">
+          <header className="text-center mb-6 sm:mb-16">
             <div 
-              className="text-3xl sm:text-4xl md:text-6xl font-dancing text-pink-600 mb-4 drop-shadow-lg text-float"
+              className="text-2xl sm:text-4xl md:text-6xl font-dancing text-pink-600 mb-3 sm:mb-4 drop-shadow-lg text-float"
               role="heading"
               aria-level="1"
             >
               <SplitText text="Happy First Anniversary My Love" />
             </div>
-            <p className="text-lg sm:text-xl text-gray-800 dark:text-gray-200 font-semibold">May 2, 2024 - May 2, 2025</p>
+            <p className="text-base sm:text-xl text-gray-800 dark:text-gray-200 font-semibold">May 2, 2024 - May 2, 2025</p>
           </header>
 
-          <div className="max-w-4xl mx-auto mb-12 sm:mb-20">
+          <div className="max-w-4xl mx-auto mb-8 sm:mb-20">
             <ImageSlider images={images} />
           </div>
 
-          <div className="relative h-32 sm:h-40 w-auto mx-auto mb-12 sm:mb-20 flex items-center justify-center">
+          <div className="relative h-24 sm:h-40 w-auto mx-auto mb-8 sm:mb-20 flex items-center justify-center">
             <div className="flex items-center space-x-2">
-              <span className="font-dancing text-xl sm:text-2xl text-pink-600">I love you</span>
+              <span className="font-dancing text-lg sm:text-2xl text-pink-600">I love you</span>
               <RotatingText
                 texts={['Darling', 'Baby', 'Sweetheart', 'Wifeyy', 'Cutie pie', 'My Love', 'My Life', 'My Everything', 'My Soulmate', 'My Best Friend', 'My Partner in Crime', 'My True Love', 'My Forever', 'My Always']}
-                mainClassName="inline-block text-pink-600 font-dancing text-xl sm:text-2xl"
+                mainClassName="inline-block text-pink-600 font-dancing text-lg sm:text-2xl"
                 staggerFrom="last"
                 initial={{ y: "100%" }}
                 animate={{ y: 0 }}
@@ -139,38 +139,38 @@ function App() {
             </div>
           </div>
 
-          <div className="prose mx-auto text-center max-w-2xl dark:prose-invert mb-12 sm:mb-20 px-4">
-            <p className="text-xl sm:text-2xl text-gray-800 dark:text-gray-200 mb-4 sm:mb-6 font-medium leading-relaxed">
+          <div className="prose mx-auto text-center max-w-2xl dark:prose-invert mb-8 sm:mb-20 px-2 sm:px-4">
+            <p className="text-lg sm:text-2xl text-gray-800 dark:text-gray-200 mb-3 sm:mb-6 font-medium leading-relaxed">
               One year of endless love, countless memories, and infinite happiness.
               You make every day special just by being you.
             </p>
-            <p className="text-2xl sm:text-3xl text-pink-600 font-dancing">
+            <p className="text-xl sm:text-3xl text-pink-600 font-dancing">
               Here's to many more years together! ❤️
             </p>
           </div>
 
-          <div className="max-w-3xl mx-auto bg-pink-50 dark:bg-pink-900/20 rounded-2xl p-4 sm:p-8 shadow-lg border border-pink-200 dark:border-pink-800 mb-12 sm:mb-20">
+          <div className="max-w-3xl mx-auto bg-pink-50 dark:bg-pink-900/20 rounded-xl sm:rounded-2xl p-3 sm:p-8 shadow-lg border border-pink-200 dark:border-pink-800 mb-8 sm:mb-20">
             <h2 
-              className="text-2xl sm:text-3xl font-dancing text-pink-600 text-center mb-4 sm:mb-6"
+              className="text-xl sm:text-3xl font-dancing text-pink-600 text-center mb-3 sm:mb-6"
               role="heading"
               aria-level="2"
             >
               A small message for you
             </h2>
-            <div className="space-y-3 sm:space-y-4 text-gray-800 dark:text-gray-200">
-              <p className="text-base sm:text-lg leading-relaxed">
+            <div className="space-y-2 sm:space-y-4 text-gray-800 dark:text-gray-200">
+              <p className="text-sm sm:text-lg leading-relaxed">
                 My love, every moment with you feels like a beautiful dream I never want to wake up from. 
                 Your smile brightens my darkest days, and your love gives me strength I never knew I had.
               </p>
-              <p className="text-base sm:text-lg leading-relaxed">
+              <p className="text-sm sm:text-lg leading-relaxed">
                 I cherish every laugh we share, every tear we've wiped away, and every challenge we've faced together. 
                 You're not just my partner, you're my best friend, my confidant, and my greatest blessing.
               </p>
-              <p className="text-base sm:text-lg leading-relaxed">
+              <p className="text-sm sm:text-lg leading-relaxed">
                 I promise to love you more each day, to support you in all your dreams, and to be your rock when you need me. 
                 You make my life complete, and I can't wait to create countless more memories with you.
               </p>
-              <p className="text-lg sm:text-xl font-dancing text-pink-600 mt-4 sm:mt-6">
+              <p className="text-base sm:text-xl font-dancing text-pink-600 mt-3 sm:mt-6">
                 Forever yours, with all my love ❤️
               </p>
             </div>
