@@ -102,13 +102,13 @@ function App() {
   return (
     <ErrorBoundary>
       <div 
-        className="min-h-screen bg-white text-gray-900 dark:bg-gray-900 dark:text-white transition-colors duration-300"
+        className="min-h-screen bg-white text-gray-900 dark:bg-gray-900 dark:text-white transition-colors duration-300 overflow-x-hidden"
         role="main"
       >
-        <div ref={containerRef} className="container mx-auto px-2 sm:px-6 py-4 sm:py-12">
-          <header className="text-center mb-6 sm:mb-16">
+        <div ref={containerRef} className="container mx-auto px-2 sm:px-6 py-4 sm:py-12 w-full max-w-full">
+          <header className="text-center mb-6 sm:mb-16 px-2">
             <div 
-              className="text-2xl sm:text-4xl md:text-6xl font-dancing text-pink-600 mb-3 sm:mb-4 drop-shadow-lg text-float"
+              className="text-2xl sm:text-4xl md:text-6xl font-dancing text-pink-600 mb-3 sm:mb-4 drop-shadow-lg text-float break-words"
               role="heading"
               aria-level="1"
             >
@@ -117,15 +117,15 @@ function App() {
             <p className="text-base sm:text-xl text-gray-800 dark:text-gray-200 font-semibold">May 2, 2024 - May 2, 2025</p>
           </header>
 
-          <div className="max-w-4xl mx-auto mb-8 sm:mb-20">
+          <div className="max-w-full mx-auto mb-8 sm:mb-20 px-2">
             <ImageSlider images={images} />
           </div>
 
-          <div className="relative h-24 sm:h-40 w-auto mx-auto mb-8 sm:mb-20 flex items-center justify-center">
-            <div className="flex items-center space-x-2">
+          <div className="relative h-24 sm:h-40 w-full mx-auto mb-8 sm:mb-20 flex items-center justify-center px-2">
+            <div className="flex items-center space-x-2 flex-wrap justify-center">
               <span className="font-dancing text-lg sm:text-2xl text-pink-600">I love you</span>
               <RotatingText
-                texts={['Darling', 'Baby', 'Sweetheart', 'Wifeyy', 'Cutie pie', 'My Love', 'My Life', 'My Everything', 'My Soulmate', 'My Best Friend', 'My Partner in Crime', 'My True Love', 'My Forever', 'My Always']}
+                texts={['Darling', 'Baby', 'Sweetheart', 'Wifeyy', 'Cutie pie', 'My Love', 'My Life', 'My Everything', 'My Soulmate', 'My Best Friend', 'My Partner in Crime', 'My True Love', 'Forever', 'Always', 'Chloo Kutty', 'Bunnu Kutty', 'Bujjima']}
                 mainClassName="inline-block text-pink-600 font-dancing text-lg sm:text-2xl"
                 staggerFrom="last"
                 initial={{ y: "100%" }}
@@ -139,7 +139,7 @@ function App() {
             </div>
           </div>
 
-          <div className="prose mx-auto text-center max-w-2xl dark:prose-invert mb-8 sm:mb-20 px-2 sm:px-4">
+          <div className="prose mx-auto text-center max-w-full sm:max-w-2xl dark:prose-invert mb-8 sm:mb-20 px-2 sm:px-4">
             <p className="text-lg sm:text-2xl text-gray-800 dark:text-gray-200 mb-3 sm:mb-6 font-medium leading-relaxed">
               One year of endless love, countless memories, and infinite happiness.
               You make every day special just by being you.
@@ -149,7 +149,7 @@ function App() {
             </p>
           </div>
 
-          <div className="max-w-3xl mx-auto bg-pink-50 dark:bg-pink-900/20 rounded-xl sm:rounded-2xl p-3 sm:p-8 shadow-lg border border-pink-200 dark:border-pink-800 mb-8 sm:mb-20">
+          <div className="max-w-full sm:max-w-3xl mx-auto bg-pink-50 dark:bg-pink-900/20 rounded-xl sm:rounded-2xl p-3 sm:p-8 shadow-lg border border-pink-200 dark:border-pink-800 mb-8 sm:mb-20 mx-2">
             <h2 
               className="text-xl sm:text-3xl font-dancing text-pink-600 text-center mb-3 sm:mb-6"
               role="heading"

@@ -46,6 +46,8 @@
 /* Text animations */
 .text-float {
   animation: float 3s ease-in-out infinite;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 @keyframes float {
@@ -65,17 +67,19 @@
   width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
+  overflow: visible;
 }
 
 .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 250px;
-  height: 350px;
+  width: 220px;
+  height: 300px;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease-in-out;
+  margin: 0 auto;
 }
 
 @media (min-width: 640px) {
@@ -184,4 +188,51 @@
 body {
   background-color: #ffffff;
   color: #333333;
+}
+
+/* Container adjustments */
+.container {
+  width: 100%;
+  max-width: 100%;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 639px) {
+  .prose {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
 }
